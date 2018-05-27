@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>We love Monty Python!</title>
+
+        <link rel="stylesheet" href="/webjars/bootstrap/4.1.0/css/bootstrap.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form th:action="@{/login}" method="POST">
+                <h1>Login</h1>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" class="form-control" th:placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="text" name="password" class="form-control" th:placeholder="Password">
+                </div>
+                <div th:if="${param.error}">
+                    <p>Username or password incorrect</p>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
+</html>

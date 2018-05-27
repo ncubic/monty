@@ -1,0 +1,17 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+i:hover {
+    color: deepskyblue;
+    cursor: pointer;
+}
+
+i.clicked {
+    opacity: 0.5
+}
+
+i.clicked:hover {
+    color: black;
+    cursor: default;
+}

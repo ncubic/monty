@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+    <body>
+        <div class="container" layout:fragment="content">
+            <table class="table">
+            	<thead>
+            		<tr>
+                        <th></th>
+            			<th>Ord.</th>
+            			<th>Category</th>
+            			<th>Joke</th>
+						<th>Likes</th>
+                        <th>Dislikes</th>
+            		</tr>
+            	</thead>
+            	<tbody>
+            		<tr th:each="joke, iterationStatus: ${jokes}">
+                        <th>
+                            <i th:attr="data-joke-id=${joke.id}" onclick="likeJoke(this)" class="fa fa-thumbs-up"></i>
+                            <i th:attr="data-joke-id=${joke.id}" onclick="dislikeJoke(this)" class="fa fa-thumbs-down"></i>
+                        </th>
+            			<td th:text=${iterationStatus.count}></td>
+            			<td th:text="${joke?.category?.name}"></td>
+            			<td th:text="${joke.content}"></td>
+                        <td class="likes" th:text="${joke.likes}"></td>
+                        <td class="dislikes" th:text="${joke.dislikes}"></td>
+            		</tr>
+            	</tbody>
+            </table>
+        </div>
+    </body>
+</html>
