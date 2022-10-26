@@ -40,7 +40,7 @@
       "memoryReservation": 512,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "httpd:2.4",
+      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
