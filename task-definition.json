@@ -1,23 +1,12 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::723488988378:role/ecsTaskExecutionRole",
+  "executionRoleArn": null,
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
       "environmentFiles": null,
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "secretOptions": null,
-        "options": {
-          "awslogs-group": "/ecs/monty",
-          "awslogs-region": "us-east-2",
-          "awslogs-stream-prefix": "ecs"
-        }
-      },
-      "entryPoint": [
-        "sh",
-        "-c"
-      ],
+      "logConfiguration": null,
+      "entryPoint": null,
       "portMappings": [
         {
           "hostPort": 80,
@@ -27,7 +16,7 @@
       ],
       "command": null,
       "linuxParameters": null,
-      "cpu": 256,
+      "cpu": 0,
       "environment": [],
       "resourceRequirements": null,
       "ulimits": null,
@@ -36,8 +25,8 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": null,
-      "memoryReservation": 512,
+      "memory": 500,
+      "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
       "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty",
@@ -48,7 +37,7 @@
       "interactive": null,
       "healthCheck": null,
       "essential": true,
-      "links": [],
+      "links": null,
       "hostname": null,
       "extraHosts": null,
       "pseudoTerminal": null,
@@ -57,25 +46,33 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "monty"
+      "name": "monty-container"
     }
   ],
   "placementConstraints": [],
-  "memory": "512",
+  "memory": null,
   "taskRoleArn": null,
   "compatibilities": [
-    "EC2",
-    "FARGATE"
+    "EXTERNAL",
+    "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty:1",
-  "family": "monty",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-task:1",
+  "family": "monty-task",
+  "requiresAttributes": [
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    }
+  ],
   "pidMode": null,
   "requiresCompatibilities": [
     "EC2"
   ],
-  "networkMode": "awsvpc",
+  "networkMode": null,
   "runtimePlatform": null,
-  "cpu": "256",
+  "cpu": null,
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
