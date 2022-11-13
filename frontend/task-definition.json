@@ -25,11 +25,11 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": 400,
+      "memory": 250,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty-frontend:ce6ae9cf50abe1919eb8a18ae515f016bc9c725e",
+      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty-frontend:41e008d153fff5ae32be0dd03ff8544de046a478",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -56,7 +56,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:16",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:21",
   "family": "monty-frontend",
   "requiresAttributes": [
     {
@@ -73,7 +73,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": null,
-  "revision": 16,
+  "revision": 21,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
