@@ -11,7 +11,7 @@
         {
           "hostPort": 80,
           "protocol": "tcp",
-          "containerPort": 80
+          "containerPort": 3000
         }
       ],
       "command": [],
@@ -56,7 +56,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:3",
   "family": "monty-frontend",
   "requiresAttributes": [
     {
@@ -73,7 +73,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": null,
-  "revision": 1,
+  "revision": 3,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
