@@ -25,11 +25,11 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": 128,
-      "memoryReservation": null,
+      "memory": null,
+      "memoryReservation": 512,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty-frontend:944080b483d599a298cceef225a6a12dd29ddea1",
+      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty-frontend:eb14df19dffce655a5ccaac957a7fd0a9389325d",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -56,7 +56,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:7",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:9",
   "family": "monty-frontend",
   "requiresAttributes": [
     {
@@ -64,6 +64,12 @@
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
     }
   ],
   "pidMode": null,
@@ -73,7 +79,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": null,
-  "revision": 7,
+  "revision": 9,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
