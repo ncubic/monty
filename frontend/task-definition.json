@@ -6,7 +6,7 @@
       "dnsSearchDomains": null,
       "environmentFiles": null,
       "logConfiguration": null,
-      "entryPoint": null,
+      "entryPoint": [],
       "portMappings": [
         {
           "hostPort": 80,
@@ -14,7 +14,7 @@
           "containerPort": 3000
         }
       ],
-      "command": null,
+      "command": [],
       "linuxParameters": null,
       "cpu": 0,
       "environment": [],
@@ -25,11 +25,11 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": null,
-      "memoryReservation": 300,
+      "memory": 400,
+      "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty-frontend:aba90c850d56e6a52f0f31d284ac3bbb629b8a36",
+      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty-frontend:ce6ae9cf50abe1919eb8a18ae515f016bc9c725e",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -56,7 +56,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:13",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:16",
   "family": "monty-frontend",
   "requiresAttributes": [
     {
@@ -64,12 +64,6 @@
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.ecr-auth"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
     }
   ],
   "pidMode": null,
@@ -79,7 +73,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": null,
-  "revision": 13,
+  "revision": 16,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
