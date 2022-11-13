@@ -9,9 +9,9 @@
       "entryPoint": [],
       "portMappings": [
         {
-          "hostPort": 8080,
+          "hostPort": 80,
           "protocol": "tcp",
-          "containerPort": 8080
+          "containerPort": 3000
         }
       ],
       "command": [],
@@ -25,11 +25,11 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": 250,
+      "memory": 400,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty:ce6ae9cf50abe1919eb8a18ae515f016bc9c725e",
+      "image": "723488988378.dkr.ecr.us-east-2.amazonaws.com/monty-frontend:ce6ae9cf50abe1919eb8a18ae515f016bc9c725e",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -46,7 +46,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "monty-backend"
+      "name": "monty-frontend"
     }
   ],
   "placementConstraints": [],
@@ -56,8 +56,8 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-backend:19",
-  "family": "monty-backend",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:723488988378:task-definition/monty-frontend:16",
+  "family": "monty-frontend",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -73,7 +73,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": null,
-  "revision": 19,
+  "revision": 16,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
